@@ -107,7 +107,7 @@ body {
 
 #container3 {
     position: relative;
-    height: 100vh;
+    padding: 20px;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -138,7 +138,7 @@ body {
 #container4 h1{
     color: white;
     font-size: 40px;
-    padding: 20px 20px;
+    padding: 20px;
     font-family: monospace;
 }
 
@@ -148,9 +148,48 @@ body {
     padding: 20px;
 }
 
-#container5 {
+#dicipleship{
     position: relative;
     height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+#dicipleship::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("https://scontent.fcrk1-5.fna.fbcdn.net/v/t39.30808-6/485589433_1098445062317304_6485912768501410657_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEAlb1PBNi9ppALv45RrIenr74zkBDIzpuvvjOQEMjOm7R9ytmLQb5NTgaR9XWLZAVWwyIe70fPUxttcIyFt-Lj&_nc_ohc=fC_F6AldUkIQ7kNvwHk5Bmi&_nc_oc=AdngOTrEfmvrpoKT6r84hAtyhoTDZvA8MpMfcs37GHGJPV0T1dM298YfqxhW6xOi9BY&_nc_zt=23&_nc_ht=scontent.fcrk1-5.fna&_nc_gid=sRSkR8SkJlDkuU1B7yAtlg&oh=00_AfcC1AxbIg0BAjILMp4n-dxgEhEd_s_QSmWTWgE5QqjScA&oe=68E5DB05") no-repeat center center / cover;
+    background-position-y: 30px;
+    filter: blur(0px);
+    z-index: -1;
+    background-attachment: fixed;
+}
+
+#content{
+    background: rgba(122, 110, 0, 0.568);
+    backdrop-filter: blur(5px);
+    width: 30%;
+    margin-right: 60px;
+    border-radius: 10px;
+    margin-top: 40px;
+    justify-self: right;
+    border-radius: 10px;
+    
+}
+
+#content h1, p{
+    color: white;
+    padding: 30px;
+}
+
+#container5 {
+    position: relative;
     justify-content: center;
     align-items: center;
     text-align: center;

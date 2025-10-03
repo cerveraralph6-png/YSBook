@@ -5,14 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Login/style.css">
     <title>Login</title>
-
-    
 </head>
 <body>
     <div id="nav">
         <a href="/index.html"><p>ENC</p></a>
         <div class="nav-buttons">
-
             <a href="/Sign_Up/signup.html"><button>Sign Up</button></a>
         </div>
     </div>
@@ -21,12 +18,25 @@
         <div id="container2">
             <img src="/Login/logo.jpg" alt="Logo" width="100" height="100">
             <h1>Login</h1>
-            <form action="">
-                <input type="text" placeholder="Username" required>
-                <input type="password" placeholder="Password" required>
-                <button type="submit">Login</button>
+            <form>
+                <input type="text" placeholder="Username" id="username" required>
+                <input type="password" placeholder="Password" id="password" required>
+                <button type="button" onclick="myFunction()">Login</button>
             </form>
         </div>
     </div>
+
+    <script>
+        function myFunction() {
+            const user = document.getElementById("username").value;
+            const pass = document.getElementById("password").value;
+
+            if (user === "admin" && pass === "admin") {
+                window.location.href = "/fyp/index.html";
+            } else {
+                alert("Invalid Username or Password");
+            }
+        }
+    </script>
 </body>
 </html>
