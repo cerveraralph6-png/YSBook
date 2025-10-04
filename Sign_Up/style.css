@@ -18,6 +18,7 @@ body {
   min-height: 100vh;
 }
 
+/* ---------------- NAV ---------------- */
 #nav {
   background: var(--navGradient);
   height: 60px;
@@ -63,6 +64,7 @@ body {
   color: black;
 }
 
+/* ---------------- CONTAINER ---------------- */
 #container1 {
   position: relative;
   min-height: 100vh;
@@ -107,9 +109,10 @@ body {
   font-size: 32px;
   margin-bottom: 10px;
   font-family: 'Gagalin', sans-serif;
-  grid-column: span 2;
+  text-align: center;
 }
 
+/* ---------------- FORM ---------------- */
 #container2 form {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -131,50 +134,50 @@ body {
   grid-column: span 2;
 }
 
-#container2 label[for="vgMember"] {
+/* Victory Group Question */
+#container2 .vg-label {
   grid-column: span 2;
-  width: 100%;
   text-align: center;
-  margin-bottom: 5px;
   font-size: 16px;
+  margin-bottom: 5px;
 }
 
+/* Radio group */
 #container2 .radio-group {
   grid-column: span 2;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  margin-top: 5px;
+  justify-content: center;
+  gap: 30px;
   margin-bottom: 10px;
 }
 
-#container2 .radio-group .radio-option {
+#container2 .radio-group label {
   display: flex;
   align-items: center;
-  gap: 8px;
-  flex: 1;
-  justify-content: center;
+  gap: 6px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
-#container2 .radio-group input[type="radio"] {
+/* Style radio button */
+#container2 input[type="radio"] {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   border: 2px solid var(--text);
   border-radius: 50%;
   cursor: pointer;
-  background-color: transparent;
   position: relative;
+  background: transparent;
 }
 
-#container2 .radio-group input[type="radio"]:checked::before {
+#container2 input[type="radio"]:checked::before {
   content: '';
   display: block;
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   background-color: var(--text);
   border-radius: 50%;
   position: absolute;
@@ -183,13 +186,9 @@ body {
   transform: translate(-50%, -50%);
 }
 
-#container2 .radio-group label {
-  font-size: 16px;
-  margin: 0;
-}
-
+/* Button */
 #container2 button {
-  padding: 10px;
+  padding: 12px;
   border-radius: 10px;
   border: none;
   cursor: pointer;
@@ -206,6 +205,7 @@ body {
   color: black;
 }
 
+/* ---------------- RESPONSIVE ---------------- */
 @media (max-width: 500px) {
   #container2 {
     width: 90%;
